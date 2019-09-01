@@ -1,4 +1,4 @@
 FROM openjdk:8
-ADD out/artifacts/demo_main_jar/demo.main.jar demo.main.jar
-EXPOSE 8085
-ENTRYPOINT ["java", "-jar", "demo.main.jar"]
+ADD build/libs/discovery-server-0.0.1-SNAPSHOT.jar discovery-server-0.0.1-SNAPSHOT.jar
+EXPOSE 8761
+ENTRYPOINT ["java", "-jar", "discovery-server-0.0.1-SNAPSHOT.jar"]
